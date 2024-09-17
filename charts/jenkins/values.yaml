@@ -29,6 +29,9 @@ credentialsId:
 # -- Enables rendering of the helm.sh/chart label to the annotations
 renderHelmLabels: true
 
+secrets:
+  db-username: app-pod-secret
+
 controller:
   # -- Used for label app.kubernetes.io/component
   componentName: "jenkins-controller"
