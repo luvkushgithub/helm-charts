@@ -178,7 +178,7 @@ spec:
       containers:
         - name: jenkins
           envFrom:
-            secretRef:
+          - secretRef:
               name: {{ .Values.secrets.db-username }}
           image: "{{ .Values.controller.image.registry }}/{{ .Values.controller.image.repository }}:{{- include "controller.image.tag" . -}}"
           imagePullPolicy: "{{ .Values.controller.image.pullPolicy }}"
