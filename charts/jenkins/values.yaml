@@ -30,7 +30,7 @@ credentialsId:
 renderHelmLabels: true
 
 secrets:
-  db-username: app-pod-secret
+  dbUsername: app-pod-secret
 
 controller:
   # -- Used for label app.kubernetes.io/component
