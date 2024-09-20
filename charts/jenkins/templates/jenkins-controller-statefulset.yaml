@@ -184,9 +184,9 @@ spec:
 #          envFrom:
 #          - secretRef:
 #              name: {{.Values.secrets.dbUsername}}
-           envFrom:
-           - secretRef: 
-               name: test-secret
+          envFrom:
+          - secretRef: 
+              name: test-secret
 #         env:
 #          - name: MY_SECRET
 #            valueFrom:
