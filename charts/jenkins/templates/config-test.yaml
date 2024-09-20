@@ -4,3 +4,6 @@ data:
 kind: Secret
 metadata:
   name: test-secret
+  annotations:
+    reloader.stakater.com/search: "true"
+  
