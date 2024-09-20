@@ -20,7 +20,7 @@ metadata:
     {{- end}}
   {{- if .Values.controller.statefulSetAnnotations }}
   annotations: 
-    secret.reloader.stakater.com/reload: "app-pod-secret"   
+    reloader.stakater.com/match: "true"  
     secret.reloader.stakater.com/reload: "test-secret"   
 {{ toYaml .Values.controller.statefulSetAnnotations | indent 4 }}
   {{- end }}
