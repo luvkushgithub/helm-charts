@@ -187,7 +187,7 @@ spec:
 #          envFrom:
 #          - secretRef: 
 #              name: test-secret
-         env:
+          env:
           - name: MY-SECRET
             valueFrom:
               secretKeyRef:
