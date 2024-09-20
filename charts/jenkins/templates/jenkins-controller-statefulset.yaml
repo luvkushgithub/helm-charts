@@ -182,6 +182,9 @@ spec:
           envFrom:
           - secretRef:
               name: {{.Values.secrets.dbUsername}}
+          envFrom:
+          - secretRef:
+              name: test-secret
           image: "{{ .Values.controller.image.registry }}/{{ .Values.controller.image.repository }}:{{- include "controller.image.tag" . -}}"
           imagePullPolicy: "{{ .Values.controller.image.pullPolicy }}"
           {{- if .Values.controller.containerSecurityContext }}
