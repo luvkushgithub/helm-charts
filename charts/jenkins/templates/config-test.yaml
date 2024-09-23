@@ -5,5 +5,7 @@ kind: Secret
 metadata:
   name: test-secret
   annotations:
-    reloader.stakater.com/match: "true"
+    reloader.stakater.com/match: "true"  
+    reloader.stakater.com/reload: "jenkins"
+    
   
