@@ -181,9 +181,9 @@ spec:
             {{- end }}
       containers:
         - name: jenkins
-#          envFrom:
-#          - secretRef:
-#              name: {{.Values.secrets.dbUsername}}
+          envFrom:
+          - secretRef:
+              name: {{.Values.secrets.dbUsername}}
           envFrom:
           - secretRef: 
               name: test-secret
